@@ -1,0 +1,160 @@
+html {
+	scroll-behavior: smooth;
+}
+.body 
+{
+    background-image: url('images')
+}
+
+.box .content {
+	color: black;
+	padding-top: 40px;
+	margin-left: 20px;
+}
+
+.box .imgBx{
+	padding-left: 20px;
+}
+
+.box .imgBx img {
+	height: 250px;
+	width: 400px;
+}
+
+.box_events {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	padding: 20px;
+	width: 400px;
+	height: 100px;
+	box-sizing: border-box;
+	background: #9DAB86;
+	border-radius: 5px;
+	display: flex;
+	
+	
+	margin-left: -190px;
+	margin-right: 400px;
+}
+
+.box_events  .content_events  {
+	color: black;
+	margin-left: 30px;
+	margin-right: -80px;
+	letter-spacing: 5px;
+}
+
+.content_events{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-left: -620px;
+	margin-right: 620px;
+	
+}
+
+.content_events .box_events{
+	position: relative;
+	top: 50%;
+	left: 50%;
+	width: 400px;
+	height: 400px;
+	background: #9DAB86;
+	margin: 10px; 
+	box-sizing: border-box;
+	display: flex;
+	border-radius: 5px;
+	display: flex;
+	
+}
+
+.content_events .box_events .imgBox_events{
+	position: relative;
+	overflow: hidden;
+}
+
+.content_events .box_events .imgBox_events img {
+	max-width: 100%; 
+	width: 400px;
+	height: 400px;
+	transition: transform 2s;
+}
+
+
+.content_events .box_events:hover .imgBox_events img{
+	transform: scale(1.2);
+	
+}
+
+.content_events .box_events .details{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	bottom: 5px;
+	right: 10px;
+	background-color: black;
+	transform: scaleY(0);
+	transition: transform .5s; 
+}
+
+
+
+
+@media (max-width:760px) {
+	.box {
+		height:auto;
+		width: 80%;
+		margin-left: -220px;
+		align-items: center;
+		justify-content: center;
+		
+	}
+	.box .imgBx {
+		padding: 20px;
+		box-sizing: border-box;
+		width: 100% !important;
+		text-align: center;
+		overflow: hidden;
+	}
+	.box .imgBx img {
+		max-width: 100%;
+		height: auto;
+		
+	}
+	.box .content {
+		width: 100% !important;
+		height: auto;
+		padding: 20px;
+		
+	}	
+	
+	.box_sched {
+		height:auto;
+		width: 80%;
+		margin-left: -220px;
+		
+	}
+	.box_sched .imgBx_sched {
+		padding: 20px;
+		box-sizing: border-box;
+		width: 100% !important;
+		text-align: center;
+		overflow: hidden;
+	}
+	.box_sched .imgBx_sched img {
+		width: 100%;
+		height: auto;
+		
+	}
+	.box_sched .content_sched {
+		width: 100% !important;
+		height: auto;
+		padding: 20px;
+		
+	}	
+	
+	
+}
+
+
